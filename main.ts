@@ -138,7 +138,7 @@ function setUpPlayer () {
         `, SpriteKind.Player)
     mySprite.setPosition(20, 0)
     controller.player1.moveSprite(mySprite, 100, 100)
-    mySprite.ay = 30
+    mySprite.ay = 35
     mySprite.setStayInScreen(false)
     scene.cameraFollowSprite(mySprite)
 }
