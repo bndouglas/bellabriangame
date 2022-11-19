@@ -136,7 +136,7 @@ function setUpPlayer () {
         ........................
         ........................
         `, SpriteKind.Player)
-    mySprite.setPosition(20, 0)
+    mySprite.setPosition(20, 100)
     controller.player1.moveSprite(mySprite, 100, 100)
     mySprite.ay = 35
     mySprite.setStayInScreen(false)
