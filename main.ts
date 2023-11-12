@@ -238,13 +238,14 @@ function setUpPlayer () {
         `, SpriteKind.Player)
     mySprite.setPosition(20, 100)
     controller.player1.moveSprite(mySprite, 100, 100)
-    mySprite.ay = 35
+    mySprite.ay = 25
     mySprite.setStayInScreen(false)
     scene.cameraFollowSprite(mySprite)
 }
 let mySprite: Sprite = null
 setUpPlayer()
 setUpBackground()
+music.play(music.createSong(hex`0078000408040100001c00010a006400f401640000040000000000000000000000000005000004760000000400012704000800011e08000c0001271000140002202718001c0001271c002000011e20002400012728002c0001273000340002202738003c0001273c004000012040004400012748004c0001275000540002202758005c0001275c006000011e60006400012768006c00012770007400022027`), music.PlaybackMode.LoopingInBackground)
 forever(function () {
 	
 })
