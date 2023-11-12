@@ -1,7 +1,6 @@
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.vy += -20
-    if (true) {
-    	
+    if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
+        mySprite.vy += -20
     }
 })
 function setUpBackground () {
